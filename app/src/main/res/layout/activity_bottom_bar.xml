@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mycoordinate"
+    android:orientation="vertical"
+    android:background="@color/greyColor"
+    tools:context=".Activities.BottomBarActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/myAppBar">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/myToolBar"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="?android:actionBarSize"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo"
+   />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|center_vertical"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/myrelative"
+    android:layout_height="wrap_content">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginTop="0.5dp"
+        app:itemTextColor="@color/bottom_navigation_text_color"
+        app:itemIconTint="@drawable/bottom_navigation_selector"        app:itemBackground="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:elevation="8dp"
+        style="@style/BottomNavigationTheme"
+        app:menu="@menu/bottom_navigation_items" />
+
+    <!--   app:itemIconTint="@drawable/icon_color"
+       app:itemTextColor="@drawable/icon_color"-->
+    <!--<android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNavigationView">-->
+<!--<FrameLayout
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottomNavigationView"
+    android:layout_alignParentTop="true"
+    />-->
+    <com.example.udaysaikumar.clgattendance.CustomViewPage.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp" />
+</RelativeLayout>
+</LinearLayout>

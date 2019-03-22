@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:background="#00ffffff"
+    android:id="@+id/myCustomActionBarImage"
+    android:layout_width="?attr/actionBarSize"
+    android:layout_gravity="end"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="2dp"
+    android:src="@drawable/logo"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

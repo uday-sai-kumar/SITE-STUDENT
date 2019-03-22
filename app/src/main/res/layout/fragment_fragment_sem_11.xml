@@ -1,0 +1,106 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fitsSystemWindows="true"
+    android:isScrollContainer="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.udaysaikumar.clgattendance.Fragments.FragmentSem_11">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <!-- <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/headTable"
+            android:stretchColumns="*">
+        </TableLayout>-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        style="@style/CardBaground"
+        android:layout_margin="2dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:strokeWidth="@dimen/cardStrokeWidth"
+        android:padding="1dp"
+        app:cardCornerRadius="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:focusable="true"
+        android:layout_height="wrap_content"
+        >
+
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tables11"
+    android:background="@color/colorPrimaryDark"
+    android:stretchColumns="*"
+    android:shrinkColumns="*">
+    <TableRow android:layout_marginBottom="1dp">
+        <TextView
+            android:id="@+id/subject"
+            android:gravity="start|center_horizontal"
+           style="@style/TextViewBlue"
+            />
+
+        <TextView
+            android:id="@+id/internals"
+            android:gravity="center_vertical|center"
+            style="@style/TextViewBlue"
+            />
+
+        <TextView
+            android:id="@+id/externals"
+            android:gravity="center_vertical|center"
+            style="@style/TextViewBlue"
+            />
+
+        <TextView
+            android:id="@+id/total"
+            android:gravity="center_vertical|center"
+            style="@style/TextViewBlue"
+            />
+    </TableRow>
+
+</TableLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            style="@style/CardBaground"
+            android:layout_margin="@dimen/cardLayoutMargin"
+            android:padding="1dp"
+            app:cardCornerRadius="@dimen/cardCornerRadius"
+            android:clickable="true"
+            app:strokeColor="@color/cardStrokeColor"
+            app:strokeWidth="@dimen/cardStrokeWidth"
+            android:focusable="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablesfinal"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:stretchColumns="*">
+        </TableLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/pureWhite</item>
+
+    </style>
+
+    <style name="BrandButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/greenColor</item>
+        <item name="backgroundTint">#000000</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="strokeColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CardBaground" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/colorPrimaryDark</item>
+        <item name="rippleColor">@color/cardRippleColor</item>
+        <item name="cardCornerRadius">@dimen/cardCornerRadius</item>
+        <item name="android:strokeColor">@color/cardStrokeColor</item>
+
+    </style>
+
+    <style name="TextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/teelColor</item>
+        <item name="android:textColorHint">@color/deepOrange</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="boxStrokeColor">@color/focus_tint_list</item>
+        <item name="android:strokeWidth">@dimen/chipStrokeWidth</item>
+        <item name="hintTextColor">@color/teelColor</item>
+    </style>
+    <style name="TextInputEditTextTheme" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">@color/greenColor</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:textSize">@dimen/textSize1</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
+    </style>
+
+    <style name="TextViewTheme" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+    <style name="TextViewTheme1" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textSize1</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TextViewTheme2" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textSize2</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TextViewTheme3" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textSize3</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TextViewGreen" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/greenColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textSize2</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TextViewBlue" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blueColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textSize3</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TextViewAddress" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+    <style name="ChipTheme" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="chipStrokeColor">@color/colorAccent</item>
+        <item name="chipBackgroundColor">@color/colorPrimary</item>
+        <item name="chipStrokeWidth">@dimen/chipStrokeWidth</item>
+        <item name="rippleColor">@color/colorAccent</item>
+    </style>
+
+    <style name="RatingBarTheme" parent="Base.Widget.AppCompat.RatingBar"
+        >
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/greyColor</item>
+        <item name="android:progressTint">@color/colorAccent</item>
+        <item name="android:progressBackgroundTint">@color/whiteColor</item>
+        <item name="android:secondaryProgressTint">@color/blueColor</item>
+    </style>
+    <style name="HeaderTextAppearance" parent="TextAppearance.MaterialCalendarWidget.Header">
+        <item name="android:textColor">@color/blueColor</item>
+    </style>
+    <style name="WeekTextAppearance" parent="TextAppearance.MaterialCalendarWidget.WeekDay">
+        <item name="android:textColor">@color/greenColor</item>
+    </style>
+    <style name="DateTextAppearance" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+
+    <style name="BottomNavigationTheme" parent="Widget.MaterialComponents.BottomNavigationView">
+    </style>
+</resources>

@@ -1,0 +1,260 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/blackColor"
+    tools:context="com.example.udaysaikumar.clgattendance.Fragments.Fragment_Feedback">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        style="@style/CardBaground"
+                        app:strokeWidth="@dimen/cardStrokeWidth"
+                        app:strokeColor="@color/cardStrokeColor"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:text="@string/rating"
+                                style="@style/TextViewBlue"
+                                android:textSize="20sp" />
+
+                            <RatingBar
+                                android:id="@+id/myRating"
+                                style="@style/RatingBarTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="false"
+                                android:numStars="5" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        style="@style/CardBaground"
+                        app:strokeColor="@color/cardStrokeColor"
+                        android:clickable="true"
+                        app:strokeWidth="@dimen/cardStrokeWidth"
+                        android:focusable="true"
+                      >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextViewBlue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:text="@string/suggestion"
+                                android:textSize="23sp" />
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/mySuggestionLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/TextInputLayoutTheme"
+                                app:errorEnabled="true"
+                                app:errorTextAppearance="@font/open_sans_light"
+                                app:errorTextColor="@color/whiteColor"
+                                >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mySuggestion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:lines="8"
+                                android:hint="@string/write_suggestion_here"
+                                style="@style/TextInputEditTextTheme"
+                                android:gravity="top"
+
+                                android:inputType="textMultiLine" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="invisible"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:visibility="visible"
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="@string/submit"
+                        style="@style/BrandButtonStyle"
+                        android:textAllCaps="false" />
+</FrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--<com.google.android.material.card.MaterialCardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+            <!--app:strokeColor="@color/cardStrokeColor"-->
+            <!--style="@style/CardBaground"-->
+            <!--app:strokeWidth="@dimen/cardStrokeWidth"-->
+            <!--android:layout_margin="7dp">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/bug_report_via_whatsapp"-->
+           <!--style="@style/TextViewBlue" />-->
+
+        <!--<com.google.android.material.card.MaterialCardView-->
+            <!--android:id="@+id/bugwhatsapp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:strokeWidth="@dimen/cardStrokeWidth"-->
+            <!--style="@style/CardBaground"-->
+            <!--android:layout_margin="@dimen/cardLayoutMargin">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/share"-->
+                <!--android:layout_height="@dimen/share"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/whatsapp" />-->
+        <!--</com.google.android.material.card.MaterialCardView>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:text="@string/bug_report_via_mail"-->
+            <!--style="@style/TextViewBlue"/>-->
+
+        <!--<com.google.android.material.card.MaterialCardView-->
+            <!--android:id="@+id/bugreport"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:strokeWidth="@dimen/cardStrokeWidth"-->
+            <!--style="@style/CardBaground"-->
+            <!--android:layout_margin="@dimen/cardLayoutMargin">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/share"-->
+                <!--android:layout_height="@dimen/share"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/mail" />-->
+        <!--</com.google.android.material.card.MaterialCardView>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/share"-->
+            <!--style="@style/TextViewBlue" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.google.android.material.card.MaterialCardView-->
+                <!--android:id="@+id/appshare"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--app:strokeWidth="@dimen/cardStrokeWidth"-->
+                <!--style="@style/CardBaground"-->
+                <!--android:layout_margin="@dimen/cardLayoutMargin">-->
+
+                <!--<TableLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:stretchColumns="*">-->
+
+                    <!--<TableRow>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="@dimen/share"-->
+                            <!--android:layout_height="@dimen/share"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/whatsapp" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="@dimen/share"-->
+                            <!--android:layout_height="@dimen/share"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/facebook" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="@dimen/share"-->
+                            <!--android:layout_height="@dimen/share"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/instagram" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="@dimen/share"-->
+                            <!--android:layout_height="@dimen/share"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/mail" />-->
+                    <!--</TableRow>-->
+                <!--</TableLayout>-->
+            <!--</com.google.android.material.card.MaterialCardView>-->
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+        <!--</com.google.android.material.card.MaterialCardView>-->
+    </LinearLayout>
+</ScrollView>

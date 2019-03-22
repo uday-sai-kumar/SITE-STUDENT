@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">SITE Student</string>
+
+    <style name="excellent">Excellent</style>
+    <style name="average">Average</style>
+    <style name="insufficient">Insufficient</style>
+
+
+    <string name="hint">Regno</string>
+    <string name="login">Login</string>
+    <dimen name="button_round">15dp</dimen>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <!-- TODO:bottom navigation items -->
+    <string name="item1">Home</string>
+    <string name="item2">Attendance</string>
+    <string name="item3">Marks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO:fragment_home-->
+    <string name="progress">Student Progress</string>
+    <!-- TODO:fragment_marks-->
+    <string name="subject">Subjects</string>
+    <string name="internals">Internals</string>
+    <string name="externals">Externals</string>
+    <string name="totalmarks">Total</string>
+    <string name="internals1">Points</string>
+    <string name="externals1">Credits</string>
+    <string name="totalmarks1">Total</string>
+    <!-- subjects-->
+
+    <string name="sem1">SEM 1</string>
+    <string name="sem2">SEM 2</string>
+    <string name="network">No Network</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="_91">(+91)</string>
+    <string name="next">Submit</string>
+    <string name="enter_otp_here">enter OTP here</string>
+    <string name="loginn">Login</string>
+    <string name="resent_otp">resent OTP</string>
+    <string name="feedback">Suggestions</string>
+    <string name="sorry">sorry, attendance data not posted</string>
+
+
+
+    <!--Attendance Strings-->
+<string name="APIKEY">AKPhEaFsE8c1f98hiX1VXa0dj5_7KFq0</string>
+    <string name="attendanceCollection">ATTENDANCE</string>
+    <string name="suggestion">Suggestions</string>
+    <string name="write_suggestion_here">write suggestion here</string>
+    <string name="rating">Rating</string>
+    <string name="found_any_bugs">Found any bugs</string>
+    <string name="write_bug_here">write bug here</string>
+    <string name="submit">Submit</string>
+    <string name="bug_report_via_whatsapp">Bug Report via WhatsApp</string>
+    <string name="bug_report_via_mail">Bug Report via Mail</string>
+    <string name="share">Share</string>
+    <string name="feedbackCollection">FEEDBACK</string>
+    <string name="notAvailable">NA</string>
+    <string name="absent_periods">Absent Periods :</string>
+    <string name="aggregated_percentage">Aggregated Percentage :</string>
+    <string name="individual_percentage">Individual Percentage :</string>
+    <string name="aggregated_attendance">Aggregated Attendance :</string>
+
+
+</resources>

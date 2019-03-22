@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/main"
+    tools:context="com.example.udaysaikumar.clgattendance.Activities.OTPActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        style="@style/CardBaground"
+        android:id="@+id/linear"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="@dimen/cardMarginMain"
+        android:layout_marginEnd="@dimen/cardMarginMain"
+        android:layout_alignParentBottom="true"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_otp_here"
+            style="@style/TextInputLayoutTheme"
+            >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/opt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/TextInputEditTextTheme"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/open_sans_light"
+            android:text="@string/loginn"
+            style="@style/BrandButtonStyle"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="invisible"
+        />
+</FrameLayout>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/resentotp"
+            style="@style/ChipTheme"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resent_otp"
+            android:layout_margin="10dp"
+            />
+
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>

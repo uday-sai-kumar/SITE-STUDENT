@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/item1"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/menu_home"
+        app:showAsAction="ifRoom"/>
+    <item android:title="@string/item2"
+        android:icon="@drawable/absentees_icon"
+        android:id="@+id/menu_attendance"
+        app:showAsAction="ifRoom"/>
+<item android:title="@string/item3"
+    android:icon="@drawable/dummy_icon"
+    android:id="@+id/menu_marks"
+    app:showAsAction="ifRoom"/>
+    <item android:title="@string/feedback"
+        android:icon="@drawable/feed_back"
+        android:id="@+id/feedback"
+        app:showAsAction="ifRoom"/>
+    <item android:title="@string/share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:id="@+id/share"
+        app:showAsAction="ifRoom"/>
+
+</menu>

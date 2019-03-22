@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#ff1744</color>-->
+    <!--<color name="colorPrimaryDark">#c4001d</color>-->
+    <!--<color name="colorAccent">#ff1744</color>-->
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#1b1b1b</color>
+    <color name="colorAccent">#ff1744</color>
+    <color name="blackColor">#000000</color>
+    <color name="bagroundText">#f2ff5252</color>
+    <color name="t11">#f06292</color>
+    <color name="t12">#7b1fa2</color>
+    <color name="t21">#00838f</color>
+    <color name="t22">#f06292</color>
+    <color name="t31">#00796b</color>
+    <color name="t32">#558b2f</color>
+    <color name="t41">#e65100</color>
+    <color name="t42">#7c4dff</color>
+<color name="selected_color">#f8bbd0</color>
+    <color name="todaydate">#3f51b5</color>
+    <color name="excellent">#009624</color>
+    <color name="satisfactory">#eaf57f17</color>
+    <color name="bad">#dbd32f2f</color>
+    <color name="selectcolor">#ff5252</color>
+    <color name="textColor">#ff9e80</color>
+
+    <!--TODO:STROKE COLORS-->
+    <color name="cardStrokeColor">#78909c</color>
+    <color name="cardRippleColor">#B7FF5252</color>
+
+    <color name="homeColor">#E0F7FA</color>
+    <color name="tableMarginColor">#cfd8dc</color>
+    <color name="drawableStrokeColorAll">#0091ea</color>
+    <color name="drawableStrokeColorCurrent">#00b0ff</color>
+    <color name="drawableStrokeColorFull">#00b8d4</color>
+    <color name="drawableStrokeColorSemi">#00c853</color>
+    <color name="drawableStrokeColorSunday">#607d8b</color>
+
+
+<color name="whiteColor">#a7c0cd</color>
+    <color name="greyColor">#e0e0e0</color>
+
+<color name="greenColor">#00e676</color>
+    <color name="blueColor">#00b0ff</color>
+    <!--TODO:For all fragments-->
+<color name="contentScrim">#424242</color>
+    <color name="deepOrange">#ff6e40</color>
+    <color name="teelColor">#4db6ac</color>
+    <color name="pureWhite">#FFFFFF</color>
+    <!--TODO: background color-->
+<color name="editTextColor" xmlns:tools="http://schemas.android.com/tools" tools:override="true">#e0e0e0</color>
+</resources>

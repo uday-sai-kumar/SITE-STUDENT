@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+<corners android:bottomLeftRadius="@dimen/buttonround"
+    android:bottomRightRadius="@dimen/buttonround"
+    android:topLeftRadius="@dimen/buttonround"
+    android:topRightRadius="@dimen/buttonround"/>
+    <gradient android:type="linear"
+        android:angle="0"
+        android:startColor="@color/colorPrimary"
+        android:endColor="@color/colorPrimaryDark"
+        android:centerColor="@color/colorAccent"
+        />
+<stroke android:color="#FFFFFF"
+    android:width="1dp"/>
+</shape>

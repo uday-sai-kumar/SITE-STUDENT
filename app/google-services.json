@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "297809466263",
+    "firebase_url": "https://redants4site.firebaseio.com",
+    "project_id": "redants4site",
+    "storage_bucket": "redants4site.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297809466263:android:564dc9d803f60c92",
+        "android_client_info": {
+          "package_name": "com.redants.siteparent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297809466263-v4grs9eqc48asj6tnbfgp1hirg7mfibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4xAiaZM-6ZshTw9zHZyrtude4kgpVzK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297809466263:android:fdac480f9283288a",
+        "android_client_info": {
+          "package_name": "com.redants.sitestudent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297809466263-v4grs9eqc48asj6tnbfgp1hirg7mfibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4xAiaZM-6ZshTw9zHZyrtude4kgpVzK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--TODO:android_home-->
+    <dimen name="profile">24sp</dimen>
+    <dimen name="profile1">23sp</dimen>
+
+    <dimen name="head">22sp</dimen>
+    <dimen name="course">17sp</dimen>
+    <dimen name="marks">22sp</dimen>
+    <!--TODO:custom_views-->
+    <dimen name="customtextview">5dp</dimen>
+    <!--TODO:button_round-->
+    <dimen name="buttonround">7dp</dimen>
+    <dimen name="share">30dp</dimen>
+
+    <!--TODO:cardStrokeWidth-->
+    <dimen name="cardStrokeWidth">0.6dp</dimen>
+    <dimen name="cardLayoutMargin">3dp</dimen>
+
+    <dimen name="cardMarginMain">3dp</dimen>
+
+    <dimen name="drawableStrokeWidth">3dp</dimen>
+
+    <dimen name="chipStrokeWidth">1dp</dimen>
+    <dimen name="cardCornerRadius">8dp</dimen>
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="textSize1">15sp</dimen>
+    <dimen name="textSize2">16sp</dimen>
+    <dimen name="textSize3">17sp</dimen>
+<dimen name="thickNessRatio">2.5</dimen>
+</resources>
