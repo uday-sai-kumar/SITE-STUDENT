@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "813745619549",
-    "firebase_url": "https://siteparent.firebaseio.com",
-    "project_id": "siteparent",
-    "storage_bucket": "siteparent.appspot.com"
+    "project_number": "297809466263",
+    "firebase_url": "https://redants4site.firebaseio.com",
+    "project_id": "redants4site",
+    "storage_bucket": "redants4site.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:813745619549:android:0341c928ad1890df",
+        "mobilesdk_app_id": "1:297809466263:android:564dc9d803f60c92",
         "android_client_info": {
-          "package_name": "com.redants.siteParent"
+          "package_name": "com.redants.siteparent"
         }
       },
       "oauth_client": [
         {
-          "client_id": "813745619549-9hpmppqs3rub65h8qaf7et7v39cd1dfv.apps.googleusercontent.com",
+          "client_id": "297809466263-v4grs9eqc48asj6tnbfgp1hirg7mfibj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyATTpkGm97OfBU9spnkXxWpU5ShwgwpmEc"
+          "current_key": "AIzaSyD4xAiaZM-6ZshTw9zHZyrtude4kgpVzK4"
         }
       ],
       "services": {

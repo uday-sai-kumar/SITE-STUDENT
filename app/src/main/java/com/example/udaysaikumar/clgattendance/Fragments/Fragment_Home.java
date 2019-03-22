@@ -1,21 +1,13 @@
 package com.example.udaysaikumar.clgattendance.Fragments;
-import android.Manifest;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.core.content.res.ResourcesCompat;
-import android.text.TextUtils;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +17,6 @@ import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.GlideException;
@@ -34,16 +25,11 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import com.bumptech.glide.signature.ObjectKey;
-import com.example.udaysaikumar.clgattendance.Interfaces.ConnectionInterface;
-import com.example.udaysaikumar.clgattendance.Interfaces.ImageInterface;
 import com.example.udaysaikumar.clgattendance.R;
 import com.example.udaysaikumar.clgattendance.RetrofitPack.RetroGet;
 import com.example.udaysaikumar.clgattendance.RetrofitPack.RetrofitMarksServer;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.Iterator;
@@ -51,7 +37,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import static android.app.Activity.RESULT_OK;
 import static android.content.Context.MODE_PRIVATE;
 
 /**
@@ -103,54 +88,7 @@ API_KEY=getResources().getString(R.string.APIKEY);
       //  showPhotoProgress();
         profile();
         showProfile();
-        profile_photo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mStorage = FirebaseStorage.getInstance().getReference();
-                //upload = v.findViewById(R.id.upload);
 
-                //checkpermission();
-                if (ActivityCompat.checkSelfPermission(v.getContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
-                        != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(v.getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                        != PackageManager.PERMISSION_GRANTED) {
-                    // Permission is not granted
-                    requestPermissions( //Method of Fragment
-                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE},
-                            1);
-                } else {
-                            Intent i = new Intent(Intent.ACTION_PICK);
-                            i.setType("image/*");
-                            startActivityForResult(i, REQUEST_CODE);
-
-
-
-                }
-            }
-        });
-
-        /*profile_photo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                try {
-                    FragmentTransaction fragmentTransaction = fragmentManager != null ? fragmentManager.beginTransaction() : null;
-                    PhotoFragment photoFragment = new PhotoFragment();
-                    if (fragmentTransaction != null) {
-                        fragmentTransaction.replace(R.id.frahome, photoFragment);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
-                    }
-                }
-                catch (Exception e){
-
-                }
-
-
-
-            }
-        });*/
-
-        //System.out.println("wowbitmap1"+bitmap);
 
         return v;
     }
@@ -366,60 +304,11 @@ API_KEY=getResources().getString(R.string.APIKEY);
             @Override
             public boolean onResourceReady(Bitmap resource, Object model, Target<Bitmap> target, DataSource dataSource, boolean isFirstResource) {
                 profile_photo.setImageBitmap(resource);
-                //bitmap=resource;
-                //System.out.println("wowbitmap"+bitmap.toString());
-                ImageInterface imageInterface= (ImageInterface) getActivity();
-                imageInterface.setImage(resource);
-                //imageProgress.setVisibility(View.INVISIBLE);
                 hidePhotoProgress();
                 return false;
             }
         }).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true).submit();
     }
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        //super method removed
-        if (resultCode == RESULT_OK) {
-            if (requestCode == REQUEST_CODE) {
-                showPhotoProgress();
-                final Uri returnUri = data.getData();
-                System.out.println("moreuri"+returnUri);
-                try {
-                    final StorageReference storageReference=mStorage.child("Photos/"+UNAME+".JPG");
-                    storageReference.putFile(returnUri)
-                            .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                                @Override
-                                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                                    //GlideApp.with(v.getContext()).asBitmap().load(storageReference).apply(new RequestOptions().transform(new RoundedCorners(40))).into(profile_photo);
-                                    Toast.makeText(v.getContext(),"upload successful",Toast.LENGTH_SHORT).show();
-                                    final Bitmap bitmapImage;
-                                    try {
-                                        GlideApp.with(v.getContext()).load(returnUri).apply(new RequestOptions().transform(new RoundedCorners(40))).into(profile_photo);
-                                      //  bitmapImage = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), returnUri);
-                                        //profile_photo.setImageBitmap(bitmapImage);
-                                        hidePhotoProgress();
 
-                                    }catch (Exception e){
-                                        e.printStackTrace();
-                                    }
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.d(TAG,e.toString());
-                            hidePhotoProgress();
-                            Toast.makeText(v.getContext(),"failed to upload",Toast.LENGTH_SHORT).show();
-
-                        }
-                    });
-                } catch (Exception e) {
-                    hidePhotoProgress();
-                    e.printStackTrace();
-                }
-              //  profile();
-                //.setImageBitmap(bitmapImage);
-            }
-        }
-    }
 
 }

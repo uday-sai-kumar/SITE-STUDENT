@@ -17,8 +17,6 @@ import com.example.udaysaikumar.clgattendance.RetrofitPack.RetroServer;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.List;
-import java.util.Objects;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

@@ -3,22 +3,16 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import androidx.annotation.NonNull;
 import com.example.udaysaikumar.clgattendance.Adapters.BottomPagerAdapter;
-import com.example.udaysaikumar.clgattendance.Interfaces.ConnectionInterface;
-import com.example.udaysaikumar.clgattendance.Interfaces.ImageInterface;
 import com.example.udaysaikumar.clgattendance.CustomViewPage.PagerTransformer;
 import com.example.udaysaikumar.clgattendance.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,31 +22,21 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
-
 import com.example.udaysaikumar.clgattendance.Fragments.Fragment_Attendance;
 import com.example.udaysaikumar.clgattendance.Fragments.Fragment_Feedback;
 import com.example.udaysaikumar.clgattendance.Fragments.Fragment_Home;
 import com.example.udaysaikumar.clgattendance.Fragments.Fragment_Marks;
-
-import java.util.Objects;
-
-public class BottomBarActivity extends AppCompatActivity implements ConnectionInterface,ImageInterface {
+public class BottomBarActivity extends AppCompatActivity {
     Fragment_Home fragment_home;
    Fragment_Attendance fragment_attendance;
    Fragment_Marks fragment_marks;
    Fragment_Feedback fragment_feedback;
 BottomNavigationView bottomNavigationView;
 RelativeLayout relativeLayout;
-CoordinatorLayout coordinatorLayout;
-FrameLayout frameLayout;
 Toolbar toolbar;
-int i;
-//FrameLayout myLayout;
     ViewPager viewPager;
     private String TAG="BottomBarActivity_Log";
-Fragment fragment=null;
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater menuInflater=getMenuInflater();
@@ -120,14 +104,7 @@ Fragment fragment=null;
                 return false;
             }
         });
-//        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
-//        getSupportActionBar().setLogo(R.drawable.logo);
-//        getSupportActionBar().setDisplayUseLogoEnabled(true);
-//        ImageView imageView = new ImageView(getSupportActionBar().getThemedContext());
-//        imageView.setScaleType(ImageView.ScaleType.CENTER);
-//        imageView.setImageResource(R.drawable.logo);
-//        getSupportActionBar().setCustomView(imageView);
-        //coordinatorLayout=findViewById(R.id.mycoordinate);
+//
         bottomNavigationView=findViewById(R.id.bottomNavigationView);
         relativeLayout=findViewById(R.id.myrelative);
        // frameLayout=findViewById(R.id.frame);
@@ -141,11 +118,6 @@ viewPager.setPageTransformer(false,new PagerTransformer());
       fragment_home=new Fragment_Home();
       fragment_feedback=new Fragment_Feedback();
         bottomNavigationView.setSelectedItemId(R.id.menu_home);
-       // fragmentTransaction.replace(R.id.myLayout,fragment_home);
-        //fragmentTransaction.addToBackStack(null);
-        //fragmentTransaction.commit();
-        //loadFragment(fragment_home);
-
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -248,66 +220,5 @@ snackbar.setActionTextColor(getResources().getColor(R.color.selectcolor));
         pager.setAdapter(pagerAdapter);
 
     }
-
-    @Override
-    public void reload() {
-         final Snackbar snackbar = Snackbar.make(relativeLayout, "low internet connection", Snackbar.LENGTH_INDEFINITE);
-//         snackbar.setAction("retry", new View.OnClickListener() {
-//             @Override
-//             public void onClick(View view) {
-//                 checkNet();
-//                 snackbar.dismiss();
-//             }
-//         }).setBehavior(new BaseTransientBottomBar.Behavior(){
-//             @Override
-//           public boolean canSwipeDismissView(View view) {
-//                return false;
-//            }
-//         });
-//
-//        snackbar.show();
-    }
-
-    @Override
-    public void setImage(Bitmap bitmap) {
-        ActionBar actionBar = getSupportActionBar();
-try {
-//    actionBar.setDisplayShowCustomEnabled(true);
-//    LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//    View v = inflator.inflate(R.layout.actionbar_customview, null);
-//ImageView imageView=v.findViewById(R.id.myCustomActionBarImage);
-//imageView.setImageBitmap(bitmap);
-//    actionBar.setCustomView(v);
-    //    actionBar.setDisplayOptions(actionBar.getDisplayOptions()
-//            | ActionBar.DISPLAY_SHOW_CUSTOM);
-//    ImageView imageView = new ImageView(actionBar.getThemedContext());
-//    //imageView.set
-//    imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-//    imageView.setImageBitmap(bitmap);
-//    ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(
-//            ActionBar.LayoutParams.WRAP_CONTENT,
-//            ActionBar.LayoutParams.WRAP_CONTENT, Gravity.RIGHT
-//            | Gravity.CENTER_VERTICAL);
-//    imageView.setLayoutParams(layoutParams);
-    //    imageView.getLayoutParams().width=actionBar.getHeight();
-    //  imageView.getLayoutParams().height=actionBar.getHeight();
-   // actionBar.setCustomView(imageView);
-}catch (Exception e)
-{
-
-}
-    }
-    /*private boolean loadFragment(Fragment fragment) {
-        //switching fragment
-        if (fragment != null) {
-            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-          fragmentTransaction
-                    .replace(R.id.myLayout, fragment).addToBackStack(null)
-                    .commit();
-
-            return true;
-        }
-        return false;
-    }*/
 
 }

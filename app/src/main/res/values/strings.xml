@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SITE Student</string>
+    <string name="app_name">SITE Parent</string>
 
     <style name="excellent">Excellent</style>
     <style name="average">Average</style>
@@ -61,7 +61,7 @@
     <string name="absent_periods">Absent Periods :</string>
     <string name="aggregated_percentage">Aggregated Percentage :</string>
     <string name="individual_percentage">Individual Percentage :</string>
-    <string name="aggregated_attendance">Aggregated Attendance</string>
+    <string name="aggregated_attendance">Aggregated Attendance :</string>
 
 
 </resources>
