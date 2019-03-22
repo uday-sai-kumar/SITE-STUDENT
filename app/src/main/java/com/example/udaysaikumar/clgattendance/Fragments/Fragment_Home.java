@@ -61,7 +61,7 @@ import static android.content.Context.MODE_PRIVATE;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment_Home extends Fragment {
+public class Fragment_Home extends Fragment{
 
 
 private CircleImageView profile_photo;
