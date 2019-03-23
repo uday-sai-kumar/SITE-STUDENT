@@ -111,7 +111,7 @@
         android:fitsSystemWindows="true"
         android:isScrollContainer="false"
         android:layout_width="match_parent"
-        android:background="@color/blackColor"
+        android:background="@color/colorPrimary"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
@@ -119,13 +119,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/blackColor"
+            android:background="@color/colorPrimary"
             tools:context="com.example.udaysaikumar.clgattendance.Fragments.Fragment_Home">
 
             <!-- TODO: Update blank fragment layout -->
 
             <FrameLayout
-                android:background="@color/blackColor"
+                android:background="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ProgressBar

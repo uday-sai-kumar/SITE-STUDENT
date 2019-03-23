@@ -19,7 +19,7 @@
 
 
     <style name="CardBaground" parent="Widget.MaterialComponents.CardView">
-        <item name="cardBackgroundColor">@color/colorPrimaryDark</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
         <item name="rippleColor">@color/cardRippleColor</item>
         <item name="cardCornerRadius">@dimen/cardCornerRadius</item>
         <item name="android:strokeColor">@color/cardStrokeColor</item>
@@ -43,7 +43,7 @@
 
     <style name="TextViewTheme" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/whiteColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">end</item>
         <item name="android:textSize">@dimen/textSize</item>
@@ -51,7 +51,7 @@
     </style>
     <style name="TextViewTheme1" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/whiteColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/textSize1</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:singleLine">true</item>
@@ -59,7 +59,7 @@
     </style>
     <style name="TextViewTheme2" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/whiteColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/textSize2</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:singleLine">true</item>
@@ -67,7 +67,7 @@
     </style>
     <style name="TextViewTheme3" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/whiteColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/textSize3</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:singleLine">true</item>
@@ -75,7 +75,7 @@
     </style>
     <style name="TextViewGreen" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/greenColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/textSize2</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:singleLine">true</item>
@@ -83,7 +83,7 @@
     </style>
     <style name="TextViewBlue" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/blueColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/textSize3</item>
         <item name="android:fontFamily">@font/open_sans</item>
         <item name="android:singleLine">true</item>
@@ -91,7 +91,7 @@
     </style>
     <style name="TextViewAddress" parent="Base.Widget.AppCompat.TextView">
         <item name="android:textColor">@color/whiteColor</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:fontFamily">@font/open_sans</item>
     </style>

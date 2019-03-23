@@ -42,7 +42,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/tables11"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorPrimary"
     android:stretchColumns="*"
     android:shrinkColumns="*">
     <TableRow android:layout_marginBottom="1dp">
@@ -92,7 +92,7 @@
             android:id="@+id/tablesfinal"
             android:paddingStart="3dp"
             android:paddingEnd="3dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
             android:stretchColumns="*">
         </TableLayout>
         </com.google.android.material.card.MaterialCardView>

@@ -71,7 +71,7 @@ Toolbar toolbar;
                 Intent sharing=new Intent(Intent.ACTION_SEND);
                 sharing.setType("text/plain");
                 sharing.putExtra(Intent.EXTRA_SUBJECT,"Share");
-                sharing.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.redants.siteParent");
+                sharing.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.redants.siteparent");
                 startActivity(Intent.createChooser(sharing,"Share"));
 
     }
