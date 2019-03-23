@@ -21,8 +21,6 @@ import android.widget.SeekBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.example.udaysaikumar.clgattendance.Others.DayDecorator;
 import com.example.udaysaikumar.clgattendance.R;
 import com.example.udaysaikumar.clgattendance.RetrofitPack.RetroGet;
@@ -158,6 +156,7 @@ maxX=point.x;
         });
         loadPercentage();
         loadCalendar();
+
         return v;
     }
 
@@ -275,8 +274,8 @@ maxX=point.x;
                 }
                     catch (Exception e) {
                     hideProgress();
-                    loadPercentage();
-                        e.printStackTrace();
+                    //loadPercentage();
+                       // e.printStackTrace();
                     }
                 }
 
@@ -293,16 +292,8 @@ maxX=point.x;
             }
         });
     }
-    public int position(int ss)
-    {
-      //  Log.d(TAG+"myAttendance","reached 11");
-        int val = (ss * (seekBar.getWidth() - 2 * seekBar.getThumbOffset())) / seekBar.getMax();
-        int textViewX = val - (myText.getWidth() / 2);
-        int finalX = myText.getWidth() + textViewX > maxX ? (maxX - myText.getWidth()) : textViewX;
-        return finalX;
-    }
     public void callAttendance(final String adate){
-        showProgress();
+       // showProgress();
        // Log.d(TAG+"myAttendance","reached 12");
         // String customReg="15A81A05J1";
        final String q= "{\"Rollno\":\""+UNAME+"\",\"MONTHYEAR\":\""+adate+"\"}";
@@ -341,7 +332,8 @@ maxX=point.x;
                 // Log.d(TAG+"myAttendance","reached 9"+t.toString());
                 try {
                     hideProgress();
-                    Toast.makeText(v.getContext(), "please connect to active network", Toast.LENGTH_LONG).show();
+                    loadCalendar();
+                    //Toast.makeText(v.getContext(), "please connect to active network", Toast.LENGTH_LONG).show();
                     //if(checkNet()) {
                        // callAttendance(month + "/" + year);
                   //  }
@@ -466,10 +458,10 @@ public void displayTable()
                 }
             }catch (Exception e)
             {
-                hideProgress();
+              //  hideProgress();
                 //Log.d(TAG,e.getMessage());
             }
-            hideProgress();
+            //hideProgress();
             nestedScrollView.fullScroll(View.FOCUS_DOWN);
 
         }

@@ -1,31 +1,31 @@
 [
     {
-        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
-        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/drawable-anydpi-v21/design_ic_visibility.xml"
+        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/color_mtrl_chip_text_color.xml.flat",
+        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/color/mtrl_chip_text_color.xml"
     },
     {
         "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/drawable_mcv_action_next.xml.flat",
         "source": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/src/main/res/drawable/mcv_action_next.xml"
     },
     {
-        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/color_mtrl_chip_text_color.xml.flat",
-        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/color/mtrl_chip_text_color.xml"
+        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
+        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
         "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
         "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha03.aar/a3730afbf6e07106f0df3be69b4b329d/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
-        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha03.aar/a3730afbf6e07106f0df3be69b4b329d/res/color-v23/abc_tint_seek_thumb.xml"
+        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/color-v23_mtrl_dark_on_surface_disabled.xml.flat",
+        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/color-v23/mtrl_dark_on_surface_disabled.xml"
     },
     {
         "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/drawable_mcv_round_cirlce_full.xml.flat",
         "source": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/src/main/res/drawable/mcv_round_cirlce_full.xml"
     },
     {
-        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/color-v23_mtrl_dark_on_surface_disabled.xml.flat",
-        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/color-v23/mtrl_dark_on_surface_disabled.xml"
+        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
+        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha03.aar/a3730afbf6e07106f0df3be69b4b329d/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
         "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
@@ -144,12 +144,12 @@
         "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha03.aar/a3730afbf6e07106f0df3be69b4b329d/res/drawable-v23/abc_control_background_material.xml"
     },
     {
-        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
-        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/layout/design_navigation_item_separator.xml"
-    },
-    {
         "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/91baf138b7fdb5cb48527b55af44e25b/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
+        "source": "/Users/udaysaikumar/.gradle/caches/transforms-1/files-1.1/material-1.1.0-alpha04.aar/3b206ffd744acb43de1e7b82410a12b7/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/udaysaikumar/AndroidStudioProjects/SITE-STUDENT-master/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",

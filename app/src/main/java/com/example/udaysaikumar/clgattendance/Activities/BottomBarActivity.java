@@ -83,7 +83,7 @@ Fragment fragment=null;
                 Intent sharing=new Intent(Intent.ACTION_SEND);
                 sharing.setType("text/plain");
                 sharing.putExtra(Intent.EXTRA_SUBJECT,"Share");
-                sharing.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.redants.siteParent");
+                sharing.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.redants.sitestudent");
                 startActivity(Intent.createChooser(sharing,"Share"));
 
     }
@@ -152,8 +152,7 @@ viewPager.setPageTransformer(false,new PagerTransformer());
                 //Log.d("fragmentcheck","home");
                //fragment=fragment_home;
                 viewPager.setCurrentItem(0);
-                break;
-                //return  true;
+                return  true;
 
             case R.id.menu_attendance:
                 Log.d("fragmentcheck","home1");
@@ -163,8 +162,8 @@ viewPager.setPageTransformer(false,new PagerTransformer());
                 //fragmentTransaction.commit();
 
                 viewPager.setCurrentItem(1);
-                break;
-               // return  true;
+                //break;
+                return  true;
 
             case R.id.menu_marks:
                 //Log.d("fragmentcheck","home2");
@@ -173,8 +172,8 @@ viewPager.setPageTransformer(false,new PagerTransformer());
                 //fragmentTransaction.commit();
                // fragment=fragment_marks;
                 viewPager.setCurrentItem(2);
-                break;
-                //return true;
+                //break;
+                return true;
             case R.id.feedback:
                // Log.d("fragmentcheck","home3");
               //  fragmentTransaction.replace(R.id.myLayout,new Fragment_Feedback());
@@ -182,7 +181,8 @@ viewPager.setPageTransformer(false,new PagerTransformer());
                 //fragmentTransaction.commit();
                // fragment=fragment_feedback;
                 viewPager.setCurrentItem(3);
-                break;
+                return true;
+               // break;
 
             case R.id.share:
                 share();

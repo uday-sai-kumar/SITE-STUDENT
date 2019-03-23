@@ -105,16 +105,12 @@ API_KEY=getResources().getString(R.string.APIKEY);
       //  Log.d(TAG,mStorageRef.toString());
         SharedPreferences sharedPreferences=v.getContext().getSharedPreferences("MyLogin",MODE_PRIVATE);
          UNAME=sharedPreferences.getString("username","");
-     //   LoginData data=new LoginData();
-      //  showProgress();
-      //  showPhotoProgress();
         profile();
         showProfile();
         profile_photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mStorage = FirebaseStorage.getInstance().getReference();
-                //upload = v.findViewById(R.id.upload);
 
                 //checkpermission();
                 if (ActivityCompat.checkSelfPermission(v.getContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -134,30 +130,6 @@ API_KEY=getResources().getString(R.string.APIKEY);
                 }
             }
         });
-
-        /*profile_photo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                try {
-                    FragmentTransaction fragmentTransaction = fragmentManager != null ? fragmentManager.beginTransaction() : null;
-                    PhotoFragment photoFragment = new PhotoFragment();
-                    if (fragmentTransaction != null) {
-                        fragmentTransaction.replace(R.id.frahome, photoFragment);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
-                    }
-                }
-                catch (Exception e){
-
-                }
-
-
-
-            }
-        });*/
-
-        //System.out.println("wowbitmap1"+bitmap);
 
         return v;
     }
@@ -209,28 +181,19 @@ API_KEY=getResources().getString(R.string.APIKEY);
                             TableRow tableRow = new TableRow(v.getContext());
                             tableRow.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
                             TextView t1 = new TextView(v.getContext());
-
+                            t1.setPadding(2,0,0,0);
                             t1.setTextAppearance(v.getContext(),R.style.TextViewGreen);
                             t1.setTypeface(typeface);
-                           // t1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 21);
                             t1.setGravity(Gravity.START|Gravity.CENTER_HORIZONTAL);
                             t1.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                         //   t1.setTextColor(Color.WHITE);
-                            // t1.setBackgroundColor(Color.WHITE);
-                            //  t1.setBackgroundResource(R.drawable.table_custom_text);
                             t1.setText(key);
                             tableRow.addView(t1,layoutParams);
                             TextView t2 = new TextView(v.getContext());
                             t2.setTextAppearance(v.getContext(),R.style.TextViewTheme1);
                             t2.setTypeface(typeface);
-                           // t2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 21);
-                            // t2.setBackgroundColor(Color.WHITE);
-                            // t2.setBackgroundResource(R.drawable.table_custom_text);
                             t2.setText(jj.get(key).toString());
                             t2.setGravity(Gravity.START|Gravity.CENTER_HORIZONTAL);
                             t2.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-
-                            //t2.setTextAppearance(getContext(),android.R.style.TextAppearance_DeviceDefault_Medium);
                             tableRow.addView(t2,layoutParams);
                             basic.addView(tableRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
                         }
@@ -241,48 +204,32 @@ API_KEY=getResources().getString(R.string.APIKEY);
                         ttt.setText(YEAR);
                         ttt.setGravity(Gravity.CENTER);
                         ttt.setTypeface(typeface);
-                     //   ttt.setSingleLine();
-                       // ttt.setMaxLines(1);
-                       // ttt.setEllipsize(TextUtils.TruncateAt.END);
-                       // ttt.setTextSize(TypedValue.COMPLEX_UNIT_SP, 21);
-                       // ttt.setBackgroundColor(getResources().getColor(R.color.homeColor));
                         tableRow1.addView(ttt);
                         TextView tt = new TextView(v.getContext());
                         tt.setTextAppearance(v.getContext(),R.style.TextViewBlue);
                         tt.setText(getResources().getText(R.string.sem1));
                         tt.setGravity(Gravity.CENTER);
                         tt.setTypeface(typeface);
-                        //tt.setBackgroundColor(getResources().getColor(R.color.homeColor));
-                        // tt.setBackgroundColor(Color.parseColor("#ffcdd2"));
                         tableRow1.addView(tt);
                         TextView tt1 = new TextView(v.getContext());
                         tt1.setTextAppearance(v.getContext(),R.style.TextViewBlue);
                         tt1.setText(getResources().getText(R.string.sem2));
-                       // tt1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 21);
                         tt1.setTypeface(typeface);
-                       // tt1.setBackgroundColor(getResources().getColor(R.color.homeColor));
-                        // tt1.setBackgroundColor(Color.parseColor("#ffcdd2"));
                         tt1.setGravity(Gravity.CENTER);
                         tableRow1.addView(tt1);
                         btech.addView(tableRow1);
                         while (it1.hasNext()) {
-
                             String key = it1.next();
                             TableRow tableRow = new TableRow(v.getContext());
                             tableRow.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                             TextView t1 = new TextView(v.getContext());
+                            t1.setPadding(2,0,0,0);
                             t1.setTypeface(typeface);
                             t1.setTextAppearance(v.getContext(),R.style.TextViewGreen);
                             t1.setGravity(Gravity.START|Gravity.CENTER_HORIZONTAL);
-                           // t1.setSingleLine();
                             t1.setMaxLines(1);
-                           // t1.setEllipsize(TextUtils.TruncateAt.END);
                             t1.setPadding(2,0,0,0);
-                           // t1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 21);
-                           // t1.setTextColor(Color.WHITE);
                             t1.setText(key);
-                           // t1.setBackgroundColor(getResources().getColor(R.color.bagroundText));
-                            //t1.setBackgroundResource(R.drawable.table_custom_text_conclusion);
                             tableRow.addView(t1);
                             JSONObject sem = jj1.getJSONObject(key);
                             Iterator<String> semit = sem.keys();
@@ -293,9 +240,6 @@ API_KEY=getResources().getString(R.string.APIKEY);
                                 t2.setTextAppearance(v.getContext(),R.style.TextViewTheme2);
                                 t2.setTypeface(typeface);
                                 t2.setGravity(Gravity.CENTER);
-                               // t2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 21);
-                               // t2.setBackgroundColor(Color.WHITE);
-                                // t2.setBackgroundResource(R.drawable.table_custom_text_conclusion);
                                 t2.setText(sem.get(sems).toString());
                                 tableRow.addView(t2);
 
@@ -304,8 +248,6 @@ API_KEY=getResources().getString(R.string.APIKEY);
 
                         }
                         FinalPercentage.setFinalPercentage(sems);
-                        // linearProgress.setVisibility(View.VISIBLE);
-
                     } catch (Exception e) {
                         hideProgress();
                         e.printStackTrace();
@@ -317,20 +259,8 @@ API_KEY=getResources().getString(R.string.APIKEY);
 
             @Override
             public void onFailure (@NonNull Call < String > call, @NonNull Throwable t){
-                //hideProgress();
-//                connectionInterface= (ConnectionInterface) getActivity();
-//                try {
-//                    // connectionInterface.reload();
-//                }catch (NullPointerException e){
-//                    Log.d(TAG,e.getMessage());
-//                }
-                //if(checkNet()) {
                     hidePhotoProgress();
                     showProfile();
-
-              //  }
-                //imageProgress.setVisibility(View.INVISIBLE);
-
             }
 
         });
@@ -374,11 +304,6 @@ API_KEY=getResources().getString(R.string.APIKEY);
             @Override
             public boolean onResourceReady(Bitmap resource, Object model, Target<Bitmap> target, DataSource dataSource, boolean isFirstResource) {
                 profile_photo.setImageBitmap(resource);
-                //bitmap=resource;
-                //System.out.println("wowbitmap"+bitmap.toString());
-              //  ImageInterface imageInterface= (ImageInterface) getActivity();
-              //  imageInterface.setImage(resource);
-                //imageProgress.setVisibility(View.INVISIBLE);
                 hidePhotoProgress();
                 return false;
             }
@@ -402,10 +327,6 @@ API_KEY=getResources().getString(R.string.APIKEY);
                     try {
 
                      Bitmap bitmap = MediaStore.Images.Media.getBitmap(v.getContext().getContentResolver(), returnUri);
-//                       File file=new File(returnUri.getPath());
-//                         File compressor=new Compressor(v.getContext()).compressToFile(file);
-//                         Log.d("moreuri",String.valueOf(compressor.getTotalSpace()));
-//                         inputStream=new FileInputStream(compressor);
                         ByteArrayOutputStream baos = new ByteArrayOutputStream();
                         bitmap.compress(Bitmap.CompressFormat.JPEG, 5, baos);
                          bytes = baos.toByteArray();
@@ -424,8 +345,6 @@ Log.d("moreuri",e.toString());
                                     final Bitmap bitmapImage;
                                     try {
                                         GlideApp.with(v.getContext()).load(returnUri).apply(new RequestOptions().transform(new RoundedCorners(40))).into(profile_photo);
-                                        //  bitmapImage = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), returnUri);
-                                        //profile_photo.setImageBitmap(bitmapImage);
                                         hidePhotoProgress();
 
                                     } catch (Exception e) {
@@ -445,8 +364,6 @@ Log.d("moreuri",e.toString());
                     hidePhotoProgress();
                     e.printStackTrace();
                 }
-              //  profile();
-                //.setImageBitmap(bitmapImage);
             }
         }
     }
