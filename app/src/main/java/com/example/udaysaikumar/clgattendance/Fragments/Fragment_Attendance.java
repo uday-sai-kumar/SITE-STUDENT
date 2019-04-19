@@ -230,7 +230,7 @@ maxX=point.x;
                 // Log.d(TAG+"myAttendance","reached 2");
                 // Log.d(TAG+"myAttendance",response.body());
                 try {
-                    if (!json.isEmpty()) {
+                    if (!json.equals("[  ]")) {
                         JSONArray jsonArray = new JSONArray(json);
                         JSONObject jsonObject = jsonArray.getJSONObject(0);
                         Iterator<String> iterator = jsonObject.keys();
@@ -275,8 +275,8 @@ maxX=point.x;
                 }
                     catch (Exception e) {
                     hideProgress();
-                    loadPercentage();
-                        e.printStackTrace();
+                 //   loadPercentage();
+                       // e.printStackTrace();
                     }
                 }
 

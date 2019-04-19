@@ -354,7 +354,7 @@ public class CircleDisplay extends View implements OnGestureListener {
     }
 
     /**
-     * set this to true to draw the inner circle, default: true
+     * set this to true to draw the inner circle, mydefault: true
      * 
      * @param enabled
      */
@@ -408,7 +408,7 @@ public class CircleDisplay extends View implements OnGestureListener {
     }
 
     /**
-     * set the thickness of the value bar, default 50%
+     * set the thickness of the value bar, mydefault 50%
      * 
      * @param percentFromTotalWidth
      */
@@ -445,7 +445,7 @@ public class CircleDisplay extends View implements OnGestureListener {
     }
 
     /**
-     * set the aplha value to be used for the remainder of the arc, default 80
+     * set the aplha value to be used for the remainder of the arc, mydefault 80
      * (use value between 0 and 255)
      * 
      * @param alpha
@@ -460,11 +460,11 @@ public class CircleDisplay extends View implements OnGestureListener {
     /** paint representing the value bar */
     public static final int PAINT_ARC = 2;
 
-    /** paint representing the inner (by default white) area */
+    /** paint representing the inner (by mydefault white) area */
     public static final int PAINT_INNER = 3;
 
     /**
-     * sets the given paint object to be used instead of the original/default
+     * sets the given paint object to be used instead of the original/mydefault
      * one
      * 
      * @param which, e.g. CircleDisplay.PAINT_TEXT to set a new text paint
@@ -487,7 +487,7 @@ public class CircleDisplay extends View implements OnGestureListener {
 
     /**
      * Sets the stepsize (minimum selection interval) of the circle display,
-     * default 1f. It is recommended to make this value not higher than 1/5 of
+     * mydefault 1f. It is recommended to make this value not higher than 1/5 of
      * the maximum selectable value, and not lower than 1/200 of the maximum
      * selectable value. For a maximum value of 100 for example, a stepsize
      * between 0.5 and 20 is recommended.
@@ -499,7 +499,7 @@ public class CircleDisplay extends View implements OnGestureListener {
     }
 
     /**
-     * returns the current stepsize of the display, default 1f
+     * returns the current stepsize of the display, mydefault 1f
      * 
      * @return
      */
@@ -519,7 +519,7 @@ public class CircleDisplay extends View implements OnGestureListener {
     /**
      * Enable touch gestures on the circle-display. If enabled, selecting values
      * onTouch() is possible. Set a SelectionListener to retrieve selected
-     * values. Do not forget to set a value before selecting values. By default
+     * values. Do not forget to set a value before selecting values. By mydefault
      * the maxvalue is 0f and therefore nothing can be selected.
      * 
      * @param enabled

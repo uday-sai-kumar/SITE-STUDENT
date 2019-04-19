@@ -17,11 +17,8 @@ import com.example.udaysaikumar.clgattendance.RetrofitPack.RetrofitOPTServer;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.textfield.TextInputEditText;
-
 import java.util.List;
-import java.util.Objects;
 import java.util.Random;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -36,25 +33,6 @@ public class OTPActivity extends AppCompatActivity {
     RelativeLayout main;
     int otpNo;
     String API_KEY;
-    void enableView(boolean b)
-    {
-        if(b)
-        {
-            optText.setEnabled(true);
-            login.setEnabled(true);
-            resent.setEnabled(true
-            );
-            progressBar.setVisibility(View.INVISIBLE);
-
-        }
-        else
-        {
-            optText.setEnabled(false);
-            login.setEnabled(false);
-            resent.setEnabled(false);
-            progressBar.setVisibility(View.VISIBLE);
-        }
-    }
 void getOTP()
 {
    // showProgress();
@@ -127,12 +105,19 @@ try{
                 // enableView(false);
                 final SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean("logged", true);
+                editor.apply();
+                Intent intent = new Intent(getApplicationContext(), BottomBarActivity.class);
+                startActivity(intent);
+                finish();
+
+              /*  final SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("logged", true);
                 SharedPreferences sharedPref = getSharedPreferences("MyLogin", MODE_PRIVATE);
                 String username = sharedPref.getString("username", "");
                 System.out.println("important" + username);
                 String q = "{\"regno\":{$eq:\"" + username + "\"}}";
                 retroGet = RetroServer.getRetrofit().create(RetroGet.class);
-                Call<List<LoginData>> dataCall = retroGet.getPhone("LOGIN", API_KEY, q);
+                Call<List<LoginData>> dataCall = retroGet.getPhone("PHONENUMBERS", API_KEY, q);
                 dataCall.enqueue(new Callback<List<LoginData>>() {
                     @Override
                     public void onResponse(@NonNull Call<List<LoginData>> call, @NonNull Response<List<LoginData>> response) {
@@ -143,13 +128,10 @@ try{
                                // System.out.println("important" + list);
                                 if (list != null && !list.isEmpty()) {
                                    // System.out.println("OTP activity" + list.get(0).getMarks());
-                                    editor.putString("marks", list.get(0).getMarks());
-                                    editor.putString("profile", list.get(0).getProfile());
-                                    editor.putString("attendance", list.get(0).getAttendance());
-                                    Intent intent = new Intent(getApplicationContext(), BottomBarActivity.class);
+
+                                    editor.putString("username", list.get(0).getRegno());
                                     editor.apply();
                                     hideProgress();
-                                    startActivity(intent);
                                     finish();
 
                                 }
@@ -173,7 +155,7 @@ try{
                         Toast.makeText(getApplicationContext(), "please connect to active network", Toast.LENGTH_SHORT).show();
                     }
 
-                });
+                });*/
 
             } else {
                 alertOTP();

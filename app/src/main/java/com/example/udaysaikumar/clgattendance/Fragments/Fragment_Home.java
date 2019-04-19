@@ -293,11 +293,13 @@ API_KEY=getResources().getString(R.string.APIKEY);
         showPhotoProgress();
         childRef=mStorageRef.child("Photos/"+UNAME+".JPG");
         Log.d("glideLoad",childRef.toString());
-        GlideApp.with(v.getContext()).asBitmap().load(childRef).apply(new RequestOptions().transform(new RoundedCorners(40))).signature(new ObjectKey(System.currentTimeMillis())).listener(new RequestListener<Bitmap>() {
+        GlideApp.with(v.getContext()).asBitmap().load(childRef).override(100).apply(new RequestOptions().transform(new RoundedCorners(40))).signature(new ObjectKey(System.currentTimeMillis())).listener(new RequestListener<Bitmap>() {
             @Override
             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
                 //imageProgress.setVisibility(View.INVISIBLE);
-                    hidePhotoProgress();
+                Log.d("glideLoad",e.getMessage());
+                profile_photo.setImageDrawable(getResources().getDrawable(R.drawable.mydefault));
+                hidePhotoProgress();
                 return false;
             }
 

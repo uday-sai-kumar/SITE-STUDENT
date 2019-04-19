@@ -81,12 +81,12 @@ showProgress();
                                 }
                                 try{
                                 if (!list.isEmpty()) {
-                                    if (Long.parseLong(phoneNo)==list.get(0).getStudentmobile() || Long.parseLong(phoneNo)==list.get(0).getParentmobile()) {
+                                    if (Long.parseLong(phoneNo)==list.get(0).getParentmobile()) {
                                         hideProgress();
                                         SharedPreferences s = getSharedPreferences("MyLogin", MODE_PRIVATE);
                                         SharedPreferences.Editor editor = s.edit();
-                                        editor.putString("phone", phoneNo);
                                         editor.putString("username",list.get(0).getRegno());
+                                        editor.putString("phone",String.valueOf(list.get(0).getParentmobile()));
                                         editor.apply();
                                         //progressBar.setVisibility(View.INVISIBLE);
                                         Intent i = new Intent(MainActivity.this, OTPActivity.class);
